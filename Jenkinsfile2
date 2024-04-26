@@ -14,7 +14,7 @@ pipeline {
             }
         }
 
-        stage('hotfix1') { 
+        stage('hotfix2') { 
              steps { 
                 sh 'echo "hotfix application...change..."'
             }
