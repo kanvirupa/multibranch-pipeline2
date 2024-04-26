@@ -1,0 +1,24 @@
+pipeline {   
+    agent any
+
+    stages {   
+        stage('main') { 
+            steps { 
+               sh 'echo "This is master branch"' 
+            }
+        }
+     
+        stage('dev') { 
+            steps { 
+               sh 'echo "dev application change...1.."'
+            }
+        }
+
+        stage('hotfix') { 
+             steps { 
+                sh 'echo "hotfix application...change..."'
+            }
+        }  
+    }
+}
+
